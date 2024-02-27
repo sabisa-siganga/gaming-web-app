@@ -1,0 +1,49 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: transparent;
+  padding-top: 30px;
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+
+    .logo {
+      width: 45.75px;
+      height: 34.86px;
+    }
+    .title {
+      width: 98px;
+      height: 34px;
+      font-weight: 800;
+      font-size: 30.77px;
+      line-height: 34.03px;
+      color: #fff;
+    }
+  }
+
+  .links {
+    .list {
+      display: flex;
+      column-gap: 30px;
+      .listItem {
+        list-style: none;
+        .navLink {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .bagContainer {
+    .bag {
+      width: 20.79px;
+      height: 22px;
+    }
+  }
+}

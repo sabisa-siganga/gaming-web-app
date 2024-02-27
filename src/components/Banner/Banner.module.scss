@@ -1,0 +1,34 @@
+.banner {
+  position: relative;
+  .heading {
+    max-width: 663.09px;
+    font-weight: 800;
+    color: #fff;
+    position: absolute;
+    margin-top: 181px;
+    padding-left: 84px;
+
+    h1 {
+      margin-top: 0;
+      font-size: 68.94px;
+    }
+    p {
+      font-size: 18.72px;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+  .artboardCont {
+    background-image: url("../../assets/board.png");
+    background-color: #2d1e6b;
+    background-blend-mode: color-dodge;
+    height: 888px;
+    background-size: auto;
+    margin-top: -75px;
+    background-repeat: no-repeat;
+    // img {
+    //   width: 100%;
+    //   margin-top: -85px;
+    // }
+  }
+}
