@@ -1,5 +1,10 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { ReactComponent as Twitch } from "../../assets/brands/twitch.svg";
+import { ReactComponent as Roblox } from "../../assets/brands/roblox.svg";
+import { ReactComponent as Asus } from "../../assets/brands/asus.svg";
+import { ReactComponent as Canon } from "../../assets/brands/canon.svg";
+import { ReactComponent as Microsoft } from "../../assets/brands/microsoft.svg";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -66,6 +71,13 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className={styles.brands}>
+        <Twitch />
+        <Roblox />
+        <Asus />
+        <Canon />
+        <Microsoft />
+      </div>
       <div className={styles.copyright}>
         <div className={styles.copTitle}>
           &copy; Copyright 2023, All Rights Reserved by board

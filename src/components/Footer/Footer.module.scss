@@ -3,7 +3,7 @@
   .alignLinks {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 90px;
+    margin-bottom: 18px;
     .footer {
       .logoContainer {
         display: flex;
@@ -54,6 +54,14 @@
         }
       }
     }
+  }
+
+  .brands {
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+    padding-left: 142px;
+    margin-bottom: 60px;
   }
   .copyright {
     padding-left: 134px;
