@@ -64,11 +64,21 @@
     margin-bottom: 60px;
   }
   .copyright {
-    padding-left: 134px;
+    display: flex;
+    padding-left: 160px;
     margin-bottom: 43px;
+    align-items: center;
+    column-gap: 30px;
+
+    .socials {
+      display: flex;
+      column-gap: 10px;
+    }
     .copTitle {
       font-size: 14px;
       color: #fff;
+      line-height: 24.3px;
+      font-weight: 400;
     }
   }
 }
