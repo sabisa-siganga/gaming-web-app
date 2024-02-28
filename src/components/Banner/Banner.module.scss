@@ -47,10 +47,22 @@
 				color: #fff;
 				text-align: center;
 			}
-		}
-		.descr {
-			font-size: 18.72px;
-			font-weight: 400;
+
+			.descr {
+				font-size: 18.72px;
+				font-weight: 400;
+			}
+
+			.statBlend {
+				background-image: url('../../assets/gradient.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+				color: transparent;
+				-webkit-text-fill-color: transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+        background-position-y: center;
+			}
 		}
 	}
 

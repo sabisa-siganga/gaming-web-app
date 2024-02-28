@@ -23,15 +23,17 @@ const Banner = () => {
 				</div>
 
 				<div className={styles.statsContainer}>
-					<div className='first-one'>
+					<div>
 						<div className={styles.stat}>300+</div>
 						<div className={styles.descr}>Unique Style</div>
 					</div>
-					<div className='sec-one'>
-						<div className={styles.stat}>200+</div>
+					<div>
+						<div className={`${styles.stat} ${styles.statBlend}`}>
+							200+
+						</div>
 						<div className={styles.descr}>Project Finished</div>
 					</div>
-					<div className='third-one'>
+					<div>
 						<div className={styles.stat}>500+</div>
 						<div className={styles.descr}>Happy Customer</div>
 					</div>
