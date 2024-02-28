@@ -1,29 +1,46 @@
+@use '../../common.scss';
+
 .banner {
 	position: relative;
+	overflow-x: clip;
 	.heading {
-		max-width: 663.09px;
-		font-weight: 800;
+		max-width: 574.09px;
 		color: #fff;
 		position: absolute;
+		z-index: 2;
 		margin-top: 181px;
 		padding-left: 84px;
 
 		h1 {
+			letter-spacing: 2px;
+			font-weight: 800;
+			line-height: 76.24px;
 			margin-top: 0;
 			font-size: 68.94px;
 			font-family: 'Ondo';
+			margin-bottom: 20px;
 			text-transform: uppercase;
+
+			span {
+				@extend .textBlend;
+			}
 		}
+
 		p {
-			font-size: 18.72px;
+			margin: 0;
+			margin-bottom: 38px;
+			font-size: 16.72px;
 			color: #fff;
+			line-height: 30.64px;
+			letter-spacing: 1px;
 			font-weight: 400;
 		}
 
 		.btns {
-			margin-bottom: 30px;
+			margin-bottom: 65px;
 			display: flex;
 			column-gap: 26px;
+			padding-left: 3px;
 
 			> button {
 				width: 100%;
@@ -45,23 +62,29 @@
 				font-weight: 800;
 				font-size: 30px;
 				color: #fff;
+				font-family: 'Ondo', 'sans-serif';
+				line-height: 33.18px;
 				text-align: center;
+				letter-spacing: 2px;
+				display: flex;
+				justify-content: center;
+				column-gap: 2px;
+
+				span {
+					font-family: 'Lato';
+				}
 			}
 
 			.descr {
 				font-size: 18.72px;
 				font-weight: 400;
+				line-height: 34.64px;
+				letter-spacing: 1px;
 			}
 
 			.statBlend {
-				background-image: url('../../assets/gradient.png');
-				background-size: cover;
-				background-repeat: no-repeat;
-				color: transparent;
-				-webkit-text-fill-color: transparent;
-				-webkit-background-clip: text;
-				background-clip: text;
-        background-position-y: center;
+				@extend .textBlend;
+				z-index: 1;
 			}
 		}
 	}
@@ -72,7 +95,17 @@
 		background-blend-mode: color-dodge;
 		height: 888px;
 		background-size: auto;
-		margin-top: -75px;
+		margin-top: -91px;
 		background-repeat: no-repeat;
+	}
+
+	.lineStrip {
+		width: 110%;
+		left: -87px;
+		top: -37px;
+	}
+
+	.circle {
+		@extend .shadowCircle;
 	}
 }

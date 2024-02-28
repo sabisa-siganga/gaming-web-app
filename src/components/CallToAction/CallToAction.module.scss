@@ -1,0 +1,92 @@
+@use '../../common.scss';
+
+.callToActionContainer {
+	position: relative;
+	overflow-x: clip;
+
+	.container {
+		background: linear-gradient(
+			rgba(255, 255, 255, 0.08),
+			rgba(217, 217, 217, 0.04)
+		);
+		backdrop-filter: blur(6px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0);
+		position: relative;
+		max-width: 1240px;
+		margin: 0 auto 50px;
+		border-radius: 10px;
+		height: 556px;
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url('../../assets/tile.png');
+			z-index: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.1;
+			background-size: contain;
+		}
+
+		.box {
+			display: flex;
+			position: relative;
+			z-index: 1;
+
+			.imgContainer {
+				flex: 1;
+
+				img {
+					width: 715px;
+					margin-top: -75px;
+					position: absolute;
+				}
+			}
+
+			.content {
+				color: #fff;
+				max-width: 572px;
+				padding-top: 55px;
+
+				.title {
+					font-family: 'Ondo';
+					font-size: 48px;
+					font-weight: 800;
+					line-height: 55.97px;
+					letter-spacing: -0.5px;
+					text-transform: uppercase;
+					margin-bottom: 9px;
+
+					span {
+						@extend .textBlend;
+					}
+				}
+				.descrip {
+					max-width: 500px;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 29.62px;
+					letter-spacing: 1px;
+					margin-bottom: 35px;
+				}
+
+				.playNow {
+					width: 203.07px;
+				}
+			}
+		}
+	}
+
+	.circle {
+		@extend .shadowCircle;
+		top: 22px;
+		right: -215px;
+		left: unset;
+		height: 521px;
+		width: 521px;
+	}
+}
