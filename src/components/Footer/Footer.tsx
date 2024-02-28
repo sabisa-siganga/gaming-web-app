@@ -1,5 +1,14 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { ReactComponent as Twitch } from "../../assets/brands/twitch.svg";
+import { ReactComponent as Roblox } from "../../assets/brands/roblox.svg";
+import { ReactComponent as Asus } from "../../assets/brands/asus.svg";
+import { ReactComponent as Canon } from "../../assets/brands/canon.svg";
+import { ReactComponent as Microsoft } from "../../assets/brands/microsoft.svg";
+import { ReactComponent as Twitter } from "../../assets/socials/twitter.svg";
+import { ReactComponent as Facebook } from "../../assets/socials/facebook.svg";
+import { ReactComponent as Instagram } from "../../assets/socials/Instagram.svg";
+import { ReactComponent as Github } from "../../assets/socials/github.svg";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -66,7 +75,20 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className={styles.brands}>
+        <Twitch />
+        <Roblox />
+        <Asus />
+        <Canon />
+        <Microsoft />
+      </div>
       <div className={styles.copyright}>
+        <div className={styles.socials}>
+          <Twitter />
+          <Facebook />
+          <Instagram />
+          <Github />
+        </div>
         <div className={styles.copTitle}>
           &copy; Copyright 2023, All Rights Reserved by board
         </div>
