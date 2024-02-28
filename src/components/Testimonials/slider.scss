@@ -1,0 +1,42 @@
+.slick-slider {
+	.slick-dots {
+		bottom: -100px;
+
+		li {
+			margin: 0 7px;
+
+			&:not(.slick-active) {
+				button {
+					&::before {
+						content: '';
+						height: 17.36px;
+						width: 17.36px;
+						border-radius: 50%;
+						background-color: #fff;
+						opacity: 1;
+					}
+				}
+			}
+
+			&.slick-active {
+				width: 28.93px;
+				height: 28.93px;
+
+				button {
+					width: 28.93px;
+					height: 28.93px;
+
+					&::before {
+						content: '';
+						height: 28.93px;
+						width: 28.93px;
+						border-radius: 50%;
+						background-image: url('../../assets/gradient.png');
+						background-position: center;
+						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+}
