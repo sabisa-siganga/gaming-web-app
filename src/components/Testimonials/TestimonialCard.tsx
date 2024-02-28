@@ -11,10 +11,11 @@ interface Props {
 	comment: string;
 	name: string;
 	company: string;
+	rating: number;
 }
 
 const TestimonialCard = (props: Props) => {
-	const { image, comment, name, company } = props;
+	const { image, comment, name, company, rating } = props;
 
 	return (
 		<div className={styles.card}>
@@ -22,11 +23,9 @@ const TestimonialCard = (props: Props) => {
 			<img className={styles.arrows} src={arrows} alt='Arrows' />
 			<div className={styles.content}>
 				<div className={styles.stars}>
-					<Star />
-					<Star />
-					<Star />
-					<Star />
-					<Star />
+					{[...Array(rating)].map((_, index) => (
+						<Star key={`star-${index}`} />
+					))}
 				</div>
 				<div className={styles.descrip}>{comment}</div>
 				<div className={styles.linebreak} />
