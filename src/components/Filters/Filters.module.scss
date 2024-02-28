@@ -1,0 +1,47 @@
+.filtersContainer {
+	h2 {
+		font-size: 66px;
+		font-weight: 800;
+		line-height: 76.96px;
+		letter-spacing: 4px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		max-width: 718px;
+		margin: 0 auto 40px;
+
+		> span {
+			background-image: url('../../assets/gradient.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: transparent;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+		}
+	}
+
+	.filterBtns {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 26px;
+		margin-bottom: 85px;
+
+		.bold {
+			font-weight: 800;
+		}
+
+		.normal {
+			font-weight: 500;
+		}
+	}
+
+	.gameCards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px 0;
+		padding: 0 84px;
+		margin-bottom: 38px;
+	}
+}

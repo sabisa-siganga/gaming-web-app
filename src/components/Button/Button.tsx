@@ -1,15 +1,32 @@
-import React from "react";
+import React from 'react';
+import styles from './Button.module.scss';
 
 interface Props {
-  title: string;
+	children: React.ReactNode;
+	variant: 'background' | 'outline';
+	onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+	className?: string;
 }
+
 const Button = (props: Props) => {
-  const { title } = props;
-  return (
-    <div className="btnContainer">
-      <button>{title}</button>
-    </div>
-  );
+	const { children, variant, className, onClick } = props;
+
+	const style = variant === 'background' ? styles.background : styles.outline;
+
+	return (
+		<>
+			<button
+				onClick={onClick}
+				className={`${styles.btn} ${style} ${className || ''}`}
+			>
+				{variant === 'background' ? (
+					<span>{children}</span>
+				) : (
+					<>{children}</>
+				)}
+			</button>
+		</>
+	);
 };
 
 export default Button;

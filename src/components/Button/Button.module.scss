@@ -1,0 +1,69 @@
+.btn {
+	background: transparent;
+	border: none;
+	position: relative;
+	height: 74px;
+	padding: 0 27px;
+	text-align: center;
+	cursor: pointer;
+
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 22.12px;
+	letter-spacing: 2px;
+
+	&.background {
+		span {
+			color: #fff;
+			z-index: 1;
+			position: relative;
+		}
+
+		&::after {
+			transform: skewX(-20deg);
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: url('../../assets/gradient.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-blend-mode: overlay;
+			z-index: 0;
+			background-position-y: center;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&.outline {
+		background-image: url('../../assets/gradient.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: overlay;
+		z-index: 0;
+		background-position-y: center;
+		height: 72px;
+
+		color: transparent;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+
+		&::after {
+			transform: skewX(-20deg);
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			border: 1px solid;
+			border-image: url('../../assets/gradient.png') 30% round;
+		}
+	}
+}
