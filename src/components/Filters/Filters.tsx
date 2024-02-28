@@ -18,6 +18,7 @@ import game3 from '../../assets/games/game3.png';
 import game4 from '../../assets/games/game4.png';
 import game5 from '../../assets/games/game5.png';
 import game6 from '../../assets/games/game6.png';
+import LineStrip from '../LineStrip/LineStrip';
 
 const Filters = () => {
 	const cards = [
@@ -127,7 +128,9 @@ const Filters = () => {
 					/>
 				))}
 			</div>
-      <div className={styles.circle} />
+			<div className={styles.circle} />
+
+			<LineStrip />
 		</section>
 	);
 };
