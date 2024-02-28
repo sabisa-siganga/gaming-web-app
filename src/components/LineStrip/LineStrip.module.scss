@@ -1,0 +1,69 @@
+.lineContainer {
+	height: 90px;
+	position: relative;
+	overflow: hidden;
+
+	&.background {
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0);
+		background: linear-gradient(
+			rgba(255, 255, 255, 0.08),
+			rgba(217, 217, 217, 0.04)
+		);
+		backdrop-filter: blur(6px);
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url('../../assets/tile.png');
+			z-index: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.2;
+			background-size: contain;
+		}
+	}
+
+	&.rotate {
+		transform: rotate(-1.98deg);
+	}
+
+	.words {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		column-gap: 39px;
+		position: relative;
+
+		> div {
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+			column-gap: 18px;
+
+			> span {
+				font-family: 'Ondo';
+				font-weight: 800;
+				font-size: 30px;
+				line-height: 33.18px;
+				letter-spacing: 2px;
+				color: #fff;
+				text-transform: uppercase;
+				display: flex;
+				column-gap: 10px;
+
+				span {
+					font-family: 'Lato';
+				}
+			}
+		}
+	}
+
+	img {
+		height: 36px;
+		width: 36px;
+	}
+}

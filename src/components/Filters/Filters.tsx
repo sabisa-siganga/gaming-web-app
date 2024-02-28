@@ -127,6 +127,7 @@ const Filters = () => {
 					/>
 				))}
 			</div>
+      <div className={styles.circle} />
 		</section>
 	);
 };

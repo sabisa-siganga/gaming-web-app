@@ -1,0 +1,22 @@
+.textBlend {
+	background-image: url('./assets/gradient.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-position-y: center;
+}
+
+.shadowCircle {
+	height: 341px;
+	z-index: -1;
+	width: 341px;
+	top: 85px;
+	left: -107px;
+	background-color: rgb(221 0 184 / 18%);
+	position: absolute;
+	border-radius: 50%;
+	box-shadow: 0 0px 165px 174px rgb(221 0 184 / 17%);
+}

@@ -1,12 +1,17 @@
 import React from 'react';
 import styles from './Banner.module.scss';
 import Button from '../Button/Button';
+import LineStrip from '../LineStrip/LineStrip';
 
 const Banner = () => {
 	return (
-		<section className={styles.banner}>
+		<div className={styles.banner}>
+			<div className={styles.circle} />
+
 			<div className={styles.heading}>
-				<h1>Let your mind explore new world</h1>
+				<h1>
+					Let your mind <span>explore</span> new world
+				</h1>
 				<p>
 					Playing electronic games, whether through consoles,
 					computers, mobile phones or another medium altogether.
@@ -24,24 +29,28 @@ const Banner = () => {
 
 				<div className={styles.statsContainer}>
 					<div>
-						<div className={styles.stat}>300+</div>
+						<div className={styles.stat}>300</div>
 						<div className={styles.descr}>Unique Style</div>
 					</div>
 					<div>
 						<div className={`${styles.stat} ${styles.statBlend}`}>
-							200+
+							200 <span>+</span>
 						</div>
 						<div className={styles.descr}>Project Finished</div>
 					</div>
 					<div>
-						<div className={styles.stat}>500+</div>
+						<div className={styles.stat}>
+							500 <span>+</span>
+						</div>
 						<div className={styles.descr}>Happy Customer</div>
 					</div>
 				</div>
 			</div>
 
 			<div className={styles.artboardCont} />
-		</section>
+
+			<LineStrip hasBackground rotate className={styles.lineStrip} />
+		</div>
 	);
 };
 
