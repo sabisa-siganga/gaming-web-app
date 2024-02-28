@@ -1,0 +1,137 @@
+.testimonialContainer {
+	padding-top: 95px;
+	margin-bottom: 60px;
+	overflow-x: clip;
+
+	.container {
+		max-width: 1325px;
+		position: relative;
+		margin: 0 auto 115px;
+		display: flex;
+		column-gap: 35px;
+		justify-content: center;
+	}
+
+	.card {
+		background: linear-gradient(
+			rgba(255, 255, 255, 0.08),
+			rgba(217, 217, 217, 0.04)
+		);
+		backdrop-filter: blur(6px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0);
+		width: 607px;
+		border-radius: 10px;
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url('../../assets/tile.png');
+			z-index: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.1;
+			background-size: contain;
+		}
+
+		.arrows {
+			position: absolute;
+			right: 45px;
+			top: -45px;
+			width: 94.25px;
+		}
+
+		.content {
+			padding: 50px 45px 40px;
+		}
+
+		.stars {
+			display: flex;
+			align-items: center;
+			margin-bottom: 8px;
+			column-gap: 5px;
+
+			img {
+				height: 25px;
+				width: 25px;
+			}
+		}
+
+		.descrip {
+			color: #fff;
+			font-size: 16px;
+			line-height: 29.62px;
+			letter-spacing: 1.2px;
+			font-weight: 400;
+			margin-bottom: 28px;
+		}
+
+		.linebreak {
+			height: 1px;
+			background-image: linear-gradient(
+				90deg,
+				rgba(255, 255, 255, 1),
+				rgba(255, 255, 255, 0)
+			);
+			margin-bottom: 30px;
+		}
+
+		.bottom {
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+
+			.verified,
+			.userDetails {
+				display: flex;
+				align-items: center;
+			}
+
+			.userDetails {
+				column-gap: 14px;
+
+				img {
+					width: 61.74px;
+					height: 61.74px;
+					border-radius: 50%;
+					object-fit: cover;
+				}
+
+				.name {
+					font-weight: 500;
+					font-size: 20.97px;
+					line-height: 23.19px;
+					letter-spacing: 1.5px;
+					margin-bottom: 10px;
+				}
+
+				.company {
+					font-weight: 500;
+					font-size: 11.65px;
+					line-height: 12.88px;
+					letter-spacing: 0.5px;
+				}
+			}
+
+			.verified {
+				column-gap: 4px;
+				font-size: 14.65px;
+				line-height: 16.2px;
+				letter-spacing: 1.5px;
+
+				svg {
+					width: 24.77px;
+					margin-right: 4px;
+				}
+			}
+		}
+	}
+
+	.lineStrip {
+		left: -88px;
+		width: 110%;
+	}
+}
