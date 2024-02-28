@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Ondo";
+  src: url("./fonts/FONTSPRINGDEMO-OndoBoldRegular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Regular.ttf") format("tff");
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
 .appContainer {
   .sub-container {
     background: #2d1e6b;

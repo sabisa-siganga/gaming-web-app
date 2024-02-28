@@ -37,11 +37,6 @@ const Header = () => {
               ABOUT
             </a>
           </li>
-          <li className={styles.listItem}>
-            <a className={styles.navLink} href="/">
-              PRODUCTS
-            </a>
-          </li>
         </ul>
       </div>
       <div className={styles.bagContainer}>

@@ -11,13 +11,49 @@
 		h1 {
 			margin-top: 0;
 			font-size: 68.94px;
+			font-family: 'Ondo';
+			text-transform: uppercase;
 		}
 		p {
 			font-size: 18.72px;
 			color: #fff;
 			font-weight: 400;
 		}
+
+		.btns {
+			margin-bottom: 30px;
+			display: flex;
+			column-gap: 26px;
+
+			> button {
+				width: 100%;
+			}
+
+			.buyNow {
+				max-width: 205.07px;
+			}
+
+			.playNow {
+				max-width: 203.07px;
+			}
+		}
+		.statsContainer {
+			column-gap: 30px;
+			display: flex;
+			.stat {
+				margin-bottom: 5px;
+				font-weight: 800;
+				font-size: 30px;
+				color: #fff;
+				text-align: center;
+			}
+		}
+		.descr {
+			font-size: 18.72px;
+			font-weight: 400;
+		}
 	}
+
 	.artboardCont {
 		background-image: url('../../assets/board.png');
 		background-color: #2d1e6b;
@@ -26,22 +62,5 @@
 		background-size: auto;
 		margin-top: -75px;
 		background-repeat: no-repeat;
-	}
-
-	.btns {
-		display: flex;
-		column-gap: 26px;
-
-		> button {
-			width: 100%;
-		}
-
-		.buyNow {
-			max-width: 205.07px;
-		}
-
-		.playNow {
-			max-width: 203.07px;
-		}
 	}
 }

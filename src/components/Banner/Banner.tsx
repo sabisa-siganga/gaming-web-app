@@ -14,8 +14,27 @@ const Banner = () => {
 					possibly as a hobby.
 				</p>
 				<div className={styles.btns}>
-					<Button variant='background' className={styles.buyNow}>BUY NOW</Button>
-					<Button variant='outline' className={styles.playNow}>PLAY NOW</Button>
+					<Button variant='background' className={styles.buyNow}>
+						BUY NOW
+					</Button>
+					<Button variant='outline' className={styles.playNow}>
+						PLAY NOW
+					</Button>
+				</div>
+
+				<div className={styles.statsContainer}>
+					<div className='first-one'>
+						<div className={styles.stat}>300+</div>
+						<div className={styles.descr}>Unique Style</div>
+					</div>
+					<div className='sec-one'>
+						<div className={styles.stat}>200+</div>
+						<div className={styles.descr}>Project Finished</div>
+					</div>
+					<div className='third-one'>
+						<div className={styles.stat}>500+</div>
+						<div className={styles.descr}>Happy Customer</div>
+					</div>
 				</div>
 			</div>
 
