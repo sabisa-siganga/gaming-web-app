@@ -93,6 +93,8 @@ const Footer = () => {
           &copy; Copyright 2023, All Rights Reserved by board
         </div>
       </div>
+
+      <div className={styles.footerBackground}></div>
     </div>
   );
 };

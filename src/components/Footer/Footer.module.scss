@@ -1,5 +1,14 @@
 .footerCont {
   padding-top: 50px;
+  .footerBackground {
+    background-image: url("../../assets/background.png");
+    background-color: #2d1e6b;
+    background-blend-mode: color-dodge;
+    height: 888px;
+    background-size: auto;
+    margin-top: -91px;
+    background-repeat: no-repeat;
+  }
   .alignLinks {
     display: flex;
     justify-content: space-evenly;
