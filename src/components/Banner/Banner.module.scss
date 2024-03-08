@@ -1,111 +1,115 @@
-@use '../../common.scss';
+// Importing common styles
+@use "../../common.scss";
 
+// styling the banner
 .banner {
-	position: relative;
-	overflow-x: clip;
-	.heading {
-		max-width: 574.09px;
-		color: #fff;
-		position: absolute;
-		z-index: 2;
-		margin-top: 181px;
-		padding-left: 84px;
+  position: relative;
+  overflow-x: clip;
 
-		h1 {
-			letter-spacing: 2px;
-			font-weight: 800;
-			line-height: 76.24px;
-			margin-top: 0;
-			font-size: 68.94px;
-			font-family: 'Ondo';
-			margin-bottom: 20px;
-			text-transform: uppercase;
+  // styling heading
+  .heading {
+    max-width: 574.09px;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    margin-top: 181px;
+    padding-left: 84px;
 
-			span {
-				@extend .textBlend;
-			}
-		}
+    h1 {
+      letter-spacing: 2px;
+      font-weight: 800;
+      line-height: 76.24px;
+      margin-top: 0;
+      font-size: 68.94px;
+      font-family: "Ondo";
+      margin-bottom: 20px;
+      text-transform: uppercase;
 
-		p {
-			margin: 0;
-			margin-bottom: 38px;
-			font-size: 16.72px;
-			color: #fff;
-			line-height: 30.64px;
-			letter-spacing: 1px;
-			font-weight: 400;
-		}
+      span {
+        @extend .textBlend;
+      }
+    }
 
-		.btns {
-			margin-bottom: 65px;
-			display: flex;
-			column-gap: 26px;
-			padding-left: 3px;
+    p {
+      margin: 0;
+      margin-bottom: 38px;
+      font-size: 16.72px;
+      color: #fff;
+      line-height: 30.64px;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
 
-			> button {
-				width: 100%;
-			}
+    .btns {
+      margin-bottom: 65px;
+      display: flex;
+      column-gap: 26px;
+      padding-left: 3px;
 
-			.buyNow {
-				max-width: 205.07px;
-			}
+      > button {
+        width: 100%;
+      }
 
-			.playNow {
-				max-width: 203.07px;
-			}
-		}
-		.statsContainer {
-			column-gap: 30px;
-			display: flex;
-			.stat {
-				margin-bottom: 5px;
-				font-weight: 800;
-				font-size: 30px;
-				color: #fff;
-				font-family: 'Ondo', 'sans-serif';
-				line-height: 33.18px;
-				text-align: center;
-				letter-spacing: 2px;
-				display: flex;
-				justify-content: center;
-				column-gap: 2px;
+      .buyNow {
+        max-width: 205.07px;
+      }
 
-				span {
-					font-family: 'Lato';
-				}
-			}
+      .playNow {
+        max-width: 203.07px;
+      }
+    }
+    .statsContainer {
+      column-gap: 30px;
+      display: flex;
+      .stat {
+        margin-bottom: 5px;
+        font-weight: 800;
+        font-size: 30px;
+        color: #fff;
+        font-family: "Ondo", "sans-serif";
+        line-height: 33.18px;
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        column-gap: 2px;
 
-			.descr {
-				font-size: 18.72px;
-				font-weight: 400;
-				line-height: 34.64px;
-				letter-spacing: 1px;
-			}
+        span {
+          font-family: "Lato";
+        }
+      }
 
-			.statBlend {
-				@extend .textBlend;
-				z-index: 1;
-			}
-		}
-	}
+      .descr {
+        font-size: 18.72px;
+        font-weight: 400;
+        line-height: 34.64px;
+        letter-spacing: 1px;
+      }
 
-	.artboardCont {
-		background-image: url('../../assets/board.png');
-		background-color: #2d1e6b;
-		background-blend-mode: color-dodge;
-		height: 888px;
-		background-size: auto;
-		margin-top: -91px;
-		background-repeat: no-repeat;
-	}
+      .statBlend {
+        @extend .textBlend;
+        z-index: 1;
+      }
+    }
+  }
 
-	.lineStrip {
-		width: 110%;
-		left: -87px;
-		top: -37px;
-	}
+  .artboardCont {
+    background-image: url("../../assets/board.png");
+    background-color: #2d1e6b;
+    background-blend-mode: color-dodge;
+    height: 888px;
+    background-size: auto;
+    margin-top: -91px;
+    background-repeat: no-repeat;
+  }
 
-	.circle {
-		@extend .shadowCircle;
-	}
+  .lineStrip {
+    width: 110%;
+    left: -87px;
+    top: -37px;
+  }
+
+  .circle {
+    @extend .shadowCircle;
+  }
 }
