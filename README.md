@@ -1,6 +1,6 @@
 # Games web app
 
-This a games web app that provide users with a seamless experience for exploring gaming content in a visually appealing and interactive manner.
+This is a games web app that provide users with a seamless experience for exploring gaming content in a visually appealing and interactive manner.
 
 ## Getting Started
 
